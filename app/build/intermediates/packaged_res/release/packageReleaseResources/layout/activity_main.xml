@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Virtual Device Config"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner_models"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_custom_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custom Model Name"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMEI Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/edit_imei1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IMEI 1 (15 digits)"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:maxLength="15"/>
+
+        <EditText
+            android:id="@+id/edit_imei2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="IMEI 2 (15 digits)"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:maxLength="15"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btn_apply_imei"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apply IMEI"
+                android:backgroundTint="#FF9800"/>
+
+            <Button
+                android:id="@+id/btn_randomize_imei"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Random IMEI"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Custom Fingerprint"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btn_apply_fingerprint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Fingerprint"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#9C27B0"/>
+
+        <Button
+            android:id="@+id/btn_randomize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Randomize All"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btn_import_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import APK"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_export_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export Profile"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_import_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import Profile"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Google Play Services"
+                android:textSize="16sp"/>
+
+            <Switch
+                android:id="@+id/switch_google_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,813 @@
+{
+  "devices": [
+    {
+      "deviceName": "Google Pixel 4",
+      "manufacturer": "Google",
+      "model": "google_pixel_4",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 855",
+        "motherboard": "coral",
+        "platform": "coral",
+        "ramSizeGB": 6,
+        "storageSizeGB": 64,
+        "gpu": "Adreno 640",
+        "chipset": "Qualcomm SDM855",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SP1A.210812.016",
+        "buildVersion": "12",
+        "securityPatch": "2021-10-05",
+        "bootloader": "coral-0.2-6663386",
+        "radio": "g8150-00005-210901-B-7106604"
+      },
+      "network": {
+        "imei1": "356987654321098",
+        "imei2": "356987654321099",
+        "imsi": "310260123456789",
+        "iccid": "89148000001234567890",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "google/coral/coral:12/SP1A.210812.016/7975654:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "Google Pixel 3",
+      "manufacturer": "Google",
+      "model": "google_pixel_3",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Snapdragon 845",
+        "motherboard": "blueline",
+        "platform": "blueline",
+        "ramSizeGB": 4,
+        "storageSizeGB": 64,
+        "gpu": "Adreno 630",
+        "chipset": "Qualcomm SDM845",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RQ3A.211001.001",
+        "buildVersion": "11",
+        "securityPatch": "2021-10-05",
+        "bootloader": "blueline-0.2-6663386",
+        "radio": "g8150-00005-210901-B-7106604"
+      },
+      "network": {
+        "imei1": "356987654321100",
+        "imei2": "356987654321101",
+        "imsi": "310260123456790",
+        "iccid": "89148000001234567891",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "google/blueline/blueline:11/RQ3A.211001.001/7975654:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Google Pixel 2",
+      "manufacturer": "Google",
+      "model": "google_pixel_2",
+      "androidVersion": 10,
+      "hardware": {
+        "processor": "Snapdragon 835",
+        "motherboard": "walleye",
+        "platform": "walleye",
+        "ramSizeGB": 4,
+        "storageSizeGB": 64,
+        "gpu": "Adreno 540",
+        "chipset": "Qualcomm MSM8998",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "QP1A.191005.007",
+        "buildVersion": "10",
+        "securityPatch": "2019-10-05",
+        "bootloader": "walleye-0.2-6663386",
+        "radio": "g8150-00005-210901-B-7106604"
+      },
+      "network": {
+        "imei1": "356987654321102",
+        "imei2": "356987654321103",
+        "imsi": "310260123456791",
+        "iccid": "89148000001234567892",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "google/walleye/walleye:10/QP1A.191005.007/7975654:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "20.09.15"
+      }
+    },
+    {
+      "deviceName": "Samsung Galaxy S21",
+      "manufacturer": "Samsung",
+      "model": "samsung_s21",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Exynos 2100",
+        "motherboard": "exynos2100",
+        "platform": "exynos2100",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Mali-G78 MP14",
+        "chipset": "Samsung Exynos 2100",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SP1A.210812.016",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "G998BXXU4BUKG",
+        "radio": "G998BXXU4BUKG"
+      },
+      "network": {
+        "imei1": "351234567890123",
+        "imei2": "351234567890124",
+        "imsi": "310410123456789",
+        "iccid": "89148000001234567891",
+        "networkOperator": "310-410",
+        "operatorName": "AT&T"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "heart_rate"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "samsung/beyond1/beyond1:12/SP1A.210812.016/G998BXXU4BUKG:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "Samsung Galaxy S20",
+      "manufacturer": "Samsung",
+      "model": "samsung_s20",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Exynos 990",
+        "motherboard": "exynos990",
+        "platform": "exynos990",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Mali-G77 MP11",
+        "chipset": "Samsung Exynos 990",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RP1A.200720.012",
+        "buildVersion": "11",
+        "securityPatch": "2021-01-01",
+        "bootloader": "G980FXXU4BUKG",
+        "radio": "G980FXXU4BUKG"
+      },
+      "network": {
+        "imei1": "351234567890125",
+        "imei2": "351234567890126",
+        "imsi": "310410123456790",
+        "iccid": "89148000001234567892",
+        "networkOperator": "310-410",
+        "operatorName": "AT&T"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "heart_rate"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "samsung/beyond1/beyond1:11/RP1A.200720.012/G980FXXU4BUKG:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Samsung Galaxy S10",
+      "manufacturer": "Samsung",
+      "model": "samsung_s10",
+      "androidVersion": 10,
+      "hardware": {
+        "processor": "Exynos 9820",
+        "motherboard": "exynos9820",
+        "platform": "exynos9820",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Mali-G76 MP12",
+        "chipset": "Samsung Exynos 9820",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "QP1A.190711.020",
+        "buildVersion": "10",
+        "securityPatch": "2020-01-01",
+        "bootloader": "G973FXXU4BUKG",
+        "radio": "G973FXXU4BUKG"
+      },
+      "network": {
+        "imei1": "351234567890127",
+        "imei2": "351234567890128",
+        "imsi": "310410123456791",
+        "iccid": "89148000001234567893",
+        "networkOperator": "310-410",
+        "operatorName": "AT&T"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "heart_rate"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "samsung/beyond1/beyond1:10/QP1A.190711.020/G973FXXU4BUKG:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "20.09.15"
+      }
+    },
+    {
+      "deviceName": "Samsung Galaxy S9",
+      "manufacturer": "Samsung",
+      "model": "samsung_s9",
+      "androidVersion": 9,
+      "hardware": {
+        "processor": "Exynos 9810",
+        "motherboard": "exynos9810",
+        "platform": "exynos9810",
+        "ramSizeGB": 4,
+        "storageSizeGB": 64,
+        "gpu": "Mali-G72 MP18",
+        "chipset": "Samsung Exynos 9810",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "PPR1.180610.011",
+        "buildVersion": "9",
+        "securityPatch": "2019-01-01",
+        "bootloader": "G960FXXU4BUKG",
+        "radio": "G960FXXU4BUKG"
+      },
+      "network": {
+        "imei1": "351234567890129",
+        "imei2": "351234567890130",
+        "imsi": "310410123456792",
+        "iccid": "89148000001234567894",
+        "networkOperator": "310-410",
+        "operatorName": "AT&T"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "heart_rate"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "samsung/beyond1/beyond1:9/PPR1.180610.011/G960FXXU4BUKG:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "19.09.15"
+      }
+    },
+    {
+      "deviceName": "Xiaomi Mi 11",
+      "manufacturer": "Xiaomi",
+      "model": "xiaomi_mi_11",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 888",
+        "motherboard": "venus",
+        "platform": "venus",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Adreno 660",
+        "chipset": "Qualcomm SM8350",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SKQ1.211113.001",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "venus-2022-01-01",
+        "radio": "venus-radio"
+      },
+      "network": {
+        "imei1": "353456789012345",
+        "imei2": "353456789012346",
+        "imsi": "432119876543210",
+        "iccid": "89343201123456789013",
+        "networkOperator": "432-11",
+        "operatorName": "MCI"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "xiaomi/venus/venus:12/SKQ1.211113.001/V13.0.4.0.SKBMIXM:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "Xiaomi Mi 10",
+      "manufacturer": "Xiaomi",
+      "model": "xiaomi_mi_10",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Snapdragon 865",
+        "motherboard": "umi",
+        "platform": "umi",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Adreno 650",
+        "chipset": "Qualcomm SM8250",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RKQ1.200826.002",
+        "buildVersion": "11",
+        "securityPatch": "2021-01-01",
+        "bootloader": "umi-2021-01-01",
+        "radio": "umi-radio"
+      },
+      "network": {
+        "imei1": "353456789012347",
+        "imei2": "353456789012348",
+        "imsi": "432119876543211",
+        "iccid": "89343201123456789014",
+        "networkOperator": "432-11",
+        "operatorName": "MCI"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "xiaomi/umi/umi:11/RKQ1.200826.002/V12.0.4.0.SKBMIXM:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Xiaomi Redmi Note 10 Pro",
+      "manufacturer": "Xiaomi",
+      "model": "redmi_note_10_pro",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Snapdragon 732G",
+        "motherboard": "sweet",
+        "platform": "sweet",
+        "ramSizeGB": 6,
+        "storageSizeGB": 128,
+        "gpu": "Adreno 618",
+        "chipset": "Qualcomm SM7150",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RKQ1.200826.002",
+        "buildVersion": "11",
+        "securityPatch": "2021-01-01",
+        "bootloader": "sweet-2021-01-01",
+        "radio": "sweet-radio"
+      },
+      "network": {
+        "imei1": "353456789012349",
+        "imei2": "353456789012350",
+        "imsi": "432119876543212",
+        "iccid": "89343201123456789015",
+        "networkOperator": "432-11",
+        "operatorName": "MCI"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "xiaomi/sweet/sweet:11/RKQ1.200826.002/V12.0.4.0.SKBMIXM:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Xiaomi Redmi Note 8 Pro",
+      "manufacturer": "Xiaomi",
+      "model": "redmi_note_8_pro",
+      "androidVersion": 10,
+      "hardware": {
+        "processor": "Helio G90T",
+        "motherboard": "begonia",
+        "platform": "begonia",
+        "ramSizeGB": 6,
+        "storageSizeGB": 128,
+        "gpu": "Mali-G76 MC4",
+        "chipset": "MediaTek MT6785V",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "QP1A.190711.020",
+        "buildVersion": "10",
+        "securityPatch": "2020-01-01",
+        "bootloader": "begonia-2020-01-01",
+        "radio": "begonia-radio"
+      },
+      "network": {
+        "imei1": "353456789012351",
+        "imei2": "353456789012352",
+        "imsi": "432119876543213",
+        "iccid": "89343201123456789016",
+        "networkOperator": "432-11",
+        "operatorName": "MCI"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "xiaomi/begonia/begonia:10/QP1A.190711.020/V12.0.4.0.SKBMIXM:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "20.09.15"
+      }
+    },
+    {
+      "deviceName": "OnePlus 9 Pro",
+      "manufacturer": "OnePlus",
+      "model": "oneplus_9_pro",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 888",
+        "motherboard": "lahaina",
+        "platform": "lahaina",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 660",
+        "chipset": "Qualcomm SM8350",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SQ1D.211205.016",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "LE2123_13_C.36",
+        "radio": "LE2123_13_C.36"
+      },
+      "network": {
+        "imei1": "352345678901234",
+        "imei2": "352345678901235",
+        "imsi": "310260987654321",
+        "iccid": "89148000001234567892",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oneplus/lemonadep/lemonadep:12/SQ1D.211205.016/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "OnePlus 8 Pro",
+      "manufacturer": "OnePlus",
+      "model": "oneplus_8_pro",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Snapdragon 865",
+        "motherboard": "kona",
+        "platform": "kona",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 650",
+        "chipset": "Qualcomm SM8250",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RQ1A.210205.004",
+        "buildVersion": "11",
+        "securityPatch": "2021-02-01",
+        "bootloader": "IN2023_13_C.36",
+        "radio": "IN2023_13_C.36"
+      },
+      "network": {
+        "imei1": "352345678901236",
+        "imei2": "352345678901237",
+        "imsi": "310260987654322",
+        "iccid": "89148000001234567893",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oneplus/kona/kona:11/RQ1A.210205.004/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "OnePlus 7 Pro",
+      "manufacturer": "OnePlus",
+      "model": "oneplus_7_pro",
+      "androidVersion": 10,
+      "hardware": {
+        "processor": "Snapdragon 855",
+        "motherboard": "guacamole",
+        "platform": "guacamole",
+        "ramSizeGB": 8,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 640",
+        "chipset": "Qualcomm SDM855",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "QP1A.190711.020",
+        "buildVersion": "10",
+        "securityPatch": "2020-01-01",
+        "bootloader": "GM1913_13_C.36",
+        "radio": "GM1913_13_C.36"
+      },
+      "network": {
+        "imei1": "352345678901238",
+        "imei2": "352345678901239",
+        "imsi": "310260987654323",
+        "iccid": "89148000001234567894",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oneplus/guacamole/guacamole:10/QP1A.190711.020/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "20.09.15"
+      }
+    },
+    {
+      "deviceName": "Oppo Find X3 Pro",
+      "manufacturer": "Oppo",
+      "model": "oppo_find_x3_pro",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 888",
+        "motherboard": "lahaina",
+        "platform": "lahaina",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 660",
+        "chipset": "Qualcomm SM8350",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SQ1D.211205.016",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "PEEM00_11_C.36",
+        "radio": "PEEM00_11_C.36"
+      },
+      "network": {
+        "imei1": "354567890123456",
+        "imei2": "354567890123457",
+        "imsi": "310260987654324",
+        "iccid": "89148000001234567895",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oppo/peem00/peem00:12/SQ1D.211205.016/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "Oppo Find X2 Pro",
+      "manufacturer": "Oppo",
+      "model": "oppo_find_x2_pro",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Snapdragon 865",
+        "motherboard": "kona",
+        "platform": "kona",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 650",
+        "chipset": "Qualcomm SM8250",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RQ1A.210205.004",
+        "buildVersion": "11",
+        "securityPatch": "2021-02-01",
+        "bootloader": "CPH2025_11_C.36",
+        "radio": "CPH2025_11_C.36"
+      },
+      "network": {
+        "imei1": "354567890123458",
+        "imei2": "354567890123459",
+        "imsi": "310260987654325",
+        "iccid": "89148000001234567896",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "barometer", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oppo/kona/kona:11/RQ1A.210205.004/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Oppo Reno 10x Zoom",
+      "manufacturer": "Oppo",
+      "model": "oppo_reno_10x_zoom",
+      "androidVersion": 10,
+      "hardware": {
+        "processor": "Snapdragon 855",
+        "motherboard": "guacamole",
+        "platform": "guacamole",
+        "ramSizeGB": 8,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 640",
+        "chipset": "Qualcomm SDM855",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "QP1A.190711.020",
+        "buildVersion": "10",
+        "securityPatch": "2020-01-01",
+        "bootloader": "CPH1919_13_C.36",
+        "radio": "CPH1919_13_C.36"
+      },
+      "network": {
+        "imei1": "354567890123460",
+        "imei2": "354567890123461",
+        "imsi": "310260987654326",
+        "iccid": "89148000001234567897",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "oppo/guacamole/guacamole:10/QP1A.190711.020/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "20.09.15"
+      }
+    },
+    {
+      "deviceName": "Vivo X60 Pro",
+      "manufacturer": "Vivo",
+      "model": "vivo_x60_pro",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 870",
+        "motherboard": "kona",
+        "platform": "kona",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 650",
+        "chipset": "Qualcomm SM8250-AC",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SP1A.210812.016",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "PD2149_13_C.36",
+        "radio": "PD2149_13_C.36"
+      },
+      "network": {
+        "imei1": "355678901234567",
+        "imei2": "355678901234568",
+        "imsi": "310260987654327",
+        "iccid": "89148000001234567898",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "vivo/kona/kona:12/SP1A.210812.016/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "22.09.15"
+      }
+    },
+    {
+      "deviceName": "Vivo V21",
+      "manufacturer": "Vivo",
+      "model": "vivo_v21",
+      "androidVersion": 11,
+      "hardware": {
+        "processor": "Dimensity 800U",
+        "motherboard": "mt6873",
+        "platform": "mt6873",
+        "ramSizeGB": 8,
+        "storageSizeGB": 128,
+        "gpu": "Mali-G57 MC3",
+        "chipset": "MediaTek MT6873",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "RQ1A.210205.004",
+        "buildVersion": "11",
+        "securityPatch": "2021-02-01",
+        "bootloader": "PD2149_11_C.36",
+        "radio": "PD2149_11_C.36"
+      },
+      "network": {
+        "imei1": "355678901234569",
+        "imei2": "355678901234570",
+        "imsi": "310260987654328",
+        "iccid": "89148000001234567899",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light", "magnetic_field", "step_counter"]
+      },
+      "fingerprint": {
+        "systemFingerprint": "vivo/mt6873/mt6873:11/RQ1A.210205.004/1643205017:user/release-keys"
+      },
+      "googleServices": {
+        "gmsInstalled": true,
+        "gmsVersion": "21.09.15"
+      }
+    },
+    {
+      "deviceName": "Realme GT",
+      "manufacturer": "Realme",
+      "model": "realme_gt",
+      "androidVersion": 12,
+      "hardware": {
+        "processor": "Snapdragon 888",
+        "motherboard": "lahaina",
+        "platform": "lahaina",
+        "ramSizeGB": 12,
+        "storageSizeGB": 256,
+        "gpu": "Adreno 660",
+        "chipset": "Qualcomm SM8350",
+        "architecture": "arm64-v8a"
+      },
+      "software": {
+        "buildId": "SP1A.210812.016",
+        "buildVersion": "12",
+        "securityPatch": "2022-01-01",
+        "bootloader": "RMX2202_13_C.36",
+        "radio": "RMX2202_13_C.36"
+      },
+      "network": {
+        "imei1": "356789012345678",
+        "imei2": "356789012345679",
+        "imsi": "310260987654329",
+        "iccid": "89148000001234567900",
+        "networkOperator": "310-260",
+        "operatorName": "T-Mobile"
+      },
+      "sensors": {
+        "availableSensors": ["accelerometer", "gyroscope", "proximity", "light

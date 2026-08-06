@@ -1,0 +1,4 @@
+#Thu Aug 06 10:39:05 UTC 2026
+base.0=/workspaces/VirtualAppProject/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

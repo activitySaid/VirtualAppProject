@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.example.virtualapp-release-25:/layout_activity_main.xml.flat",
+        "source": "com.example.virtualapp-main-26:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.virtualapp-release-25:/xml_network_security_config.xml.flat",
+        "source": "com.example.virtualapp-main-26:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.example.virtualapp-release-25:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.example.virtualapp-main-26:/drawable/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.virtualapp-release-25:/xml_file_paths.xml.flat",
+        "source": "com.example.virtualapp-main-26:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.example.virtualapp-release-25:/drawable_ic_launcher.png.flat",
+        "source": "com.example.virtualapp-main-26:/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.virtualapp-release-25:/drawable_ic_launcher_round.png.flat",
+        "source": "com.example.virtualapp-main-26:/drawable/ic_launcher_round.png"
+    }
+]

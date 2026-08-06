@@ -1,0 +1,304 @@
+/workspaces/VirtualAppProject/app/src/main/AndroidManifest.xml:11: Warning: WRITE_EXTERNAL_STORAGE no longer provides write access when targeting Android 10+ [ScopedStorage]
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ScopedStorage":
+   Scoped storage is enforced on Android 10+ (or Android 11+ if using
+   requestLegacyExternalStorage). In particular, WRITE_EXTERNAL_STORAGE will
+   no longer provide write access to all files; it will provide the equivalent
+   of READ_EXTERNAL_STORAGE instead.
+
+   As of Android 13, if you need to query or interact with MediaStore or media
+   files on the shared storage, you should be using instead one or more new
+   storage permissions:
+   * android.permission.READ_MEDIA_IMAGES
+   * android.permission.READ_MEDIA_VIDEO
+   * android.permission.READ_MEDIA_AUDIO
+
+   and then add maxSdkVersion="33" to the older permission. See the developer
+   guide for how to do this:
+   https://developer.android.com/about/versions/13/behavior-changes-13#granula
+   r-media-permissions
+
+   The MANAGE_EXTERNAL_STORAGE permission can be used to manage all files, but
+   it is rarely necessary and most apps on Google Play are not allowed to use
+   it. Most apps should instead migrate to use scoped storage. To modify or
+   delete files, apps should request write access from the user as described
+   at https://goo.gle/android-mediastore-createwriterequest.
+
+   To learn more, read these resources: Play policy:
+   https://goo.gle/policy-storage-help Allowable use cases:
+   https://goo.gle/policy-storage-usecases
+
+   https://goo.gle/android-storage-usecases
+
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/device/DeviceProfileManager.java:42: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                        profileMap.put(profile.getModel().toLowerCase(), profile);
+                                                          ~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/device/DeviceProfileManager.java:52: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+        return model == null ? null : profileMap.get(model.toLowerCase());
+                                                           ~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/device/DeviceProfileManager.java:69: Warning: Implicitly using the default locale is a common source of bugs: Use toLowerCase(Locale) instead. For strings meant to be internal use Locale.ROOT, otherwise Locale.getDefault(). [DefaultLocale]
+                profileMap.put(p.getModel().toLowerCase(), p);
+                                            ~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/device/DeviceProfileManager.java:92: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        String tac = "356" + String.format("%05d", (int)(Math.random() * 100000));
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/device/DeviceProfileManager.java:93: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        String snr = String.format("%06d", (int)(Math.random() * 1000000));
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/workspaces/VirtualAppProject/app/src/main/java/com/example/virtualapp/ui/MainActivity.java:18: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialCode from androidx.appcompat.appcompat]
+    private Switch switchGooglePlay;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseSwitchCompatOrMaterialCode":
+   Use SwitchCompat from AppCompat or SwitchMaterial from Material library
+
+   Vendor: Android Open Source Project (androidx.appcompat.appcompat)
+   Identifier: androidx.appcompat.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=192731
+
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:139: Warning: Use SwitchCompat from AppCompat or SwitchMaterial from Material library [UseSwitchCompatOrMaterialXml from androidx.appcompat.appcompat]
+            <Switch
+            ^
+
+   Explanation for issues of type "UseSwitchCompatOrMaterialXml":
+   Use SwitchCompat from AppCompat or SwitchMaterial from Material library
+
+   Vendor: Android Open Source Project (androidx.appcompat.appcompat)
+   Identifier: androidx.appcompat.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=192731
+
+/workspaces/VirtualAppProject/app/build.gradle:9: Warning: A newer version of compileSdkVersion than 31 is available: 34 [GradleDependency]
+    compileSdkVersion 31
+    ~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/build.gradle:26: Warning: A newer version of com.google.android.gms:play-services-base than 18.5.0 is available: 18.10.0 [GradleDependency]
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/build.gradle:27: Warning: A newer version of androidx.appcompat:appcompat than 1.4.0 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/build.gradle:28: Warning: A newer version of com.google.android.material:material than 1.4.0 is available: 1.14.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.4.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/build.gradle:29: Warning: A newer version of com.google.code.gson:gson than 2.8.9 is available: 2.10.1 [GradleDependency]
+    implementation 'com.google.code.gson:gson:2.8.9'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/workspaces/VirtualAppProject/app/build.gradle:13: Error: Google Play requires that apps target API level 33 or higher. [ExpiredTargetSdkVersion]
+        targetSdkVersion 31
+        ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ExpiredTargetSdkVersion":
+   Configuring your app to target a recent API level ensures that users
+   benefit from significant security and performance improvements, while still
+   allowing your app to run on older Android versions (down to the
+   minSdkVersion).
+
+   To update your targetSdkVersion, follow the steps from "Meeting Google Play
+   requirements for target API level",
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://support.google.com/googleplay/android-developer/answer/113469#targetsdk
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher_foreground.png: Warning: The resource R.drawable.ic_launcher_foreground appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher_round.png: Warning: Launcher icon used as round icon did not have a circular shape [IconLauncherShape]
+
+   Explanation for issues of type "IconLauncherShape":
+   According to the Android Design Guide
+   (https://d.android.com/r/studio-ui/designer/material/iconography) your
+   launcher icons should "use a distinct silhouette", a "three-dimensional,
+   front view, with a slight perspective as if viewed from above, so that
+   users perceive some depth."
+
+   The unique silhouette implies that your launcher icon should not be a
+   filled square.
+
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher.png: Warning: Found bitmap drawable res/drawable/ic_launcher.png in densityless folder [IconLocation]
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher_foreground.png: Warning: Found bitmap drawable res/drawable/ic_launcher_foreground.png in densityless folder [IconLocation]
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher_round.png: Warning: Found bitmap drawable res/drawable/ic_launcher_round.png in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/workspaces/VirtualAppProject/app/src/main/res/drawable/ic_launcher_round.png: Warning: The following unrelated icon files have identical contents: ic_launcher.png, ic_launcher_foreground.png, ic_launcher_round.png [IconDuplicates]
+
+   Explanation for issues of type "IconDuplicates":
+   If an icon is repeated under different names, you can consolidate and just
+   use one of the icons and delete the others to make your application
+   smaller. However, duplicated icons usually are not intentional and can
+   sometimes point to icons that were accidentally overwritten or accidentally
+   not updated.
+
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:65: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:73: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:26: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:83: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:26: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:41: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:50: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:83: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:16: Warning: Hardcoded string "Virtual Device Config", should use @string resource [HardcodedText]
+            android:text="Virtual Device Config"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:30: Warning: Hardcoded string "Custom Model Name", should use @string resource [HardcodedText]
+            android:hint="Custom Model Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:36: Warning: Hardcoded string "IMEI Settings", should use @string resource [HardcodedText]
+            android:text="IMEI Settings"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:45: Warning: Hardcoded string "IMEI 1 (15 digits)", should use @string resource [HardcodedText]
+            android:hint="IMEI 1 (15 digits)"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:54: Warning: Hardcoded string "IMEI 2 (15 digits)", should use @string resource [HardcodedText]
+            android:hint="IMEI 2 (15 digits)"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:70: Warning: Hardcoded string "Apply IMEI", should use @string resource [HardcodedText]
+                android:text="Apply IMEI"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:78: Warning: Hardcoded string "Random IMEI", should use @string resource [HardcodedText]
+                android:text="Random IMEI"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:87: Warning: Hardcoded string "Custom Fingerprint", should use @string resource [HardcodedText]
+            android:hint="Custom Fingerprint"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:94: Warning: Hardcoded string "Apply Fingerprint", should use @string resource [HardcodedText]
+            android:text="Apply Fingerprint"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:102: Warning: Hardcoded string "Randomize All", should use @string resource [HardcodedText]
+            android:text="Randomize All"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:109: Warning: Hardcoded string "Import APK", should use @string resource [HardcodedText]
+            android:text="Import APK"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:116: Warning: Hardcoded string "Export Profile", should use @string resource [HardcodedText]
+            android:text="Export Profile"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:123: Warning: Hardcoded string "Import Profile", should use @string resource [HardcodedText]
+            android:text="Import Profile"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspaces/VirtualAppProject/app/src/main/res/layout/activity_main.xml:136: Warning: Hardcoded string "Google Play Services", should use @string resource [HardcodedText]
+                android:text="Google Play Services"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+1 errors, 42 warnings

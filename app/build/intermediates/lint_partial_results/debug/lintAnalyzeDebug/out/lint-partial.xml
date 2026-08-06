@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.2" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.virtualapp.ui.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.drawable.ic_launcher_foreground"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_launcher_foreground.png"/>
+        <entry
+            name="model"
+            string="drawable[ic_launcher(U),ic_launcher_round(U),ic_launcher_foreground(D)],id[spinner_models(U),edit_custom_model(U),edit_imei1(U),edit_imei2(U),btn_apply_imei(U),btn_randomize_imei(U),edit_fingerprint(U),btn_apply_fingerprint(U),btn_randomize(U),btn_import_app(U),btn_export_profile(U),btn_import_profile(U),switch_google_play(U)],integer[google_play_services_version(R)],layout[activity_main(U)],style[Theme_AppCompat_Light_DarkActionBar(R)],xml[network_security_config(U),file_paths(U)];;;;"/>
+    </map>
+
+</incidents>

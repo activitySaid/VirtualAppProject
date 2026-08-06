@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/workspaces/VirtualAppProject/app"
+    name=":app"
+    type="APP"
+    maven="VirtualAppProject:app:unspecified"
+    agpVersion="8.7.2"
+    buildFolder="build"
+    bootClassPath="/home/codespace/android-sdk/platforms/android-31/android.jar:/home/codespace/android-sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-31"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>
